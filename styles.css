@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Staatliches&display=swap');
+
+/*
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Staatliches', cursive;
+*/
+
+
+body{
+    margin: 0;
+    background-image: url(fondos/fondo\ principal.jpg);
+    background-size: cover;
+}
+
+header{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+}
+
+#perfil{
+    width: 60px;
+    margin-left: 50px;
+}
+
+.navegacion{
+    margin-right: 45px;
+    display: flex;
+}
+
+.cabText{
+    padding-right: 65px;
+    color: white;
+    transition: 0.3s;
+}
+
+.cabText:hover{
+    letter-spacing: 2px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+#name{
+    margin-left: 55px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 22px;
+    word-spacing: 150%;
+    letter-spacing: 1px;
+}
+
+
+.cuerpo{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+#presentacion{
+    margin-top: 180px;
+    font-size: 90px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-weight: lighter;
+}
+
+#parrafoCuerpo{
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.redes1{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 400px;
+    left: 10px;
+    padding: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+}
+
+.imgRedes{
+    align-items: center;
+    display: block;
+    width: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#codigos{
+    width: 400px;
+    display: block;
+    margin: auto;
+    transform: translate(0, 110px);
+    text-shadow: 10px 10px 10px black;
+}
+
+.leng{
+    text-align: center;
+    margin-top: 500px;
+}
+
+#lengtext{
+    font-size: 25px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+
+
+#hr1{
+    position: absolute;
+    top: 2000px;
+    width: 100%;
+}
