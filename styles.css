@@ -10,6 +10,7 @@ body{
     margin: 0;
     background-image: url(fondos/fondo\ principal.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header{
@@ -29,7 +30,7 @@ header{
 }
 
 #perfil{
-    width: 60px;
+    width: 80px;
     margin-left: 50px;
 }
 
@@ -42,6 +43,7 @@ header{
     padding-right: 65px;
     color: white;
     transition: 0.3s;
+    font-size: 120%;
 }
 
 .cabText:hover{
@@ -67,7 +69,6 @@ header{
     color: white;
     text-align: center;
     position: relative;
-    top: 100px;
 }
 
 #presentacion{
@@ -109,28 +110,43 @@ a{
 }
 
 #codigos{
-    width: 400px;
+    width: 500px;
     display: block;
     margin: auto;
-    transform: translate(0, 110px);
+    transform: translate(0, 50px);
     text-shadow: 10px 10px 10px black;
 }
 
-.leng{
+.herramientas{
     text-align: center;
-    margin-top: 500px;
 }
 
-#lengtext{
+#desarrollo{
+    margin-top: 270px;
+}
+
+#design{
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.programText{
     font-size: 25px;
     font-family: 'Manrope', sans-serif;
     color: white;
 }
 
+.lenguajes img{
+    padding-inline: 10px;
+}
 
+.programas img{
+    width: 270px;
+}
 
 #hr1{
     position: absolute;
-    top: 2000px;
+    top: 100%;
     width: 100%;
+    border-style: none;
 }
