@@ -13,7 +13,7 @@ body{
     background-attachment: fixed;
 }
 
-header{
+.cabecera{
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
@@ -22,7 +22,7 @@ header{
     top: 0;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 4px;
     font-family: 'Manrope', sans-serif;
@@ -52,6 +52,7 @@ header{
 
 .logo{
     display: flex;
+    margin-right: auto;
     align-items: center;
 }
 
@@ -149,4 +150,48 @@ a{
     top: 100%;
     width: 100%;
     border-style: none;
+}
+
+.menu{
+    display: none;
+}
+
+/**/@media screen and (max-width: 800px){
+    .navegacion {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+.cabecera .overlay{
+    height: max-content;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(36, 36, 36, 0.5);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.cabecera .overlay .overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+.cabecera .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (max-height: 450px){
+
 }
