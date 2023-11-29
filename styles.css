@@ -5,42 +5,35 @@
     font-family: 'Staatliches', cursive;
 */
 
+*{
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
-    background-image: url(fondos/fondo\ principal.jpg);
+    background-image: url(fondos/fondo\ principal_2.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
 
-.cabecera{
-    color: white;
+.navbar{
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     position: fixed;
+    margin-inline: auto;
     width: 100%;
     top: 0;
     z-index: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 4px;
     font-family: 'Manrope', sans-serif;
     text-transform: uppercase;
 }
 
-#perfil{
-    width: 80px;
-    margin-left: 50px;
-}
-
-.navegacion{
-    margin-right: 45px;
-    display: flex;
-}
-
 .cabText{
-    padding-right: 65px;
+    padding-inline: 20px;
     color: white;
     transition: 0.3s;
     font-size: 120%;
@@ -52,58 +45,57 @@ body{
 
 .logo{
     display: flex;
-    margin-right: auto;
+    max-width: 50px;
+    padding-inline: 20px;
+}
+
+.presentation{
+    color: white;
+    position: relative;
     align-items: center;
 }
 
-#name{
-    margin-left: 55px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 22px;
-    word-spacing: 150%;
-    letter-spacing: 1px;
-}
-
-
-.cuerpo{
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-#presentacion{
-    margin-top: 180px;
-    font-size: 90px;
+.presentation h1{
+    font-size: 60px;
     font-family: 'Staatliches', cursive;
     letter-spacing: 5px;
-    font-weight: lighter;
+    margin-block: 0;
+    color: #8bc9ff;
 }
 
-#parrafoCuerpo{
-    font-family: 'Manrope', sans-serif;
-    font-size: 25px;
-    margin-top: -50px;
+.presentation h3{
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    margin-block: 0;
 }
 
-.redes1{
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    position: fixed;
-    top: 400px;
-    left: 10px;
-    padding: 7px;
-    padding-left: 7px;
-    padding-right: 7px;
-    border-radius: 5px;
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-.imgRedes{
-    align-items: center;
-    display: block;
-    width: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.animated-point {
+    margin-left: .2em;
+    color: white;
+    animation: parpadeo 2s infinite;
+    animation-timing-function: step-start;
+}
+
+
+.yellow{
+    color: #fffea8;
+}
+
+.blue{
+    color: #8bc9ff;
 }
 
 a{
@@ -156,7 +148,7 @@ a{
     display: none;
 }
 
-/**/@media screen and (max-width: 800px){
+@media screen and (max-width: 800px){
     .navegacion {
         display: none;
     }
@@ -165,7 +157,7 @@ a{
     }
 }
 
-.cabecera .overlay{
+.navbar .overlay{
     height: max-content;
     width: 0;
     position: fixed;
@@ -177,7 +169,7 @@ a{
     transition: all 0.3s ease 0s;
 }
 
-.cabecera .overlay .overlay-content{
+.navbar .overlay .overlay-content{
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -186,7 +178,7 @@ a{
     background-color: green;
 }
 
-.cabecera .overlay .close{
+.navbar .overlay .close{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -194,4 +186,271 @@ a{
 
 @media screen and (max-height: 450px){
 
+}
+
+.container {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#perfil-small{
+    display: none;
+}
+
+/*  -------------- GRILLA --------------  */
+
+.grid{
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    display: flex;
+}
+
+.titulo{
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+}
+
+.description img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.description p{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.5rem;
+    margin-block: 0;
+    margin-right: 30px;
+    text-align: left;
+    align-items: center;
+}
+
+.redes{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.redes-box{
+    width: 100%;
+    border-radius: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    padding: 10px;
+    background-image: linear-gradient(#8bc9ff, #fffea8);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .38s;
+}
+
+.redes-box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: 100% 2px;
+}
+
+.redes-box a{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.redes-box img{
+    margin-left: 20px;
+    width: 30px;
+}
+
+.redes-box p{
+    font-size: 20px;
+    margin: 0;
+    margin-left: 20px;
+    color: #8bc9ff;
+}
+
+.experiencia{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.experiencia div{
+    display: flex;
+    align-items: center;
+}
+
+.experiencia > div{    
+    gap: 40px;
+}
+
+.experiencia h1{
+    font-family: 'Staatliches';
+    font-size: 6rem;
+    margin-block: 0;
+}
+
+.experiencia p{
+    margin-block: 0;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: 20px;
+}
+
+.titulo-proyecto{
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.titulo-proyecto h1{
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    margin-block: 0;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.proyect-card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    padding: 10px;
+    transition: .2s ease-in;
+}
+
+.proyect-card:hover{
+    scale: 1.03;
+}
+
+.proyect-card img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius: 10px;
+    filter: grayscale(100%);
+}
+
+.proyect-card img:hover{
+    filter: grayscale(0);
+}
+
+.proyect-card a:hover{
+    cursor: pointer;
+}
+
+.proyect-card h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+    letter-spacing: .1em;
+    margin: 10px;
+}
+
+@media (max-width: 850px){
+    .description p{
+        font-size: 1.25rem;
+    }
+    .description img{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .experiencia p{
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 700px){
+    #perfil-large{
+        display: none;
+    }
+    #perfil-small{
+        display: flex;
+        max-width: 30vw;
+    }
+    .description{
+        padding: 20px
+    }
+    .description p{
+        margin-inline: 0;
+    }
+}
+
+@media (max-width: 600px){
+    #perfil-small{     
+        max-width: 25vw;
+    }
+    .presentation h3{
+        font-size: 30px;
+    }
+    .presentation h1{
+        font-size: 45px;
+        letter-spacing: .1rem;
+    }
+    .redes-box p{
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    .redes-box img{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 450px){
+    #perfil-small{
+        position: absolute;        
+        max-width: 25vw;
+        top: 20px;
+        right: 20px;
+    }
+    .presentation h3{
+        font-size: 30px;
+    }
+    .presentation h1{
+        font-size: 45px;
+        letter-spacing: .1rem;
+    }
+    .redes-box p{
+        display: none;
+    }
+    .redes-box{        
+        justify-content: center;
+    }
+    .redes-box img{
+        margin-inline: 5px;
+    }    
+    .description p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 345px){
+    #perfil-small{
+        display: none;
+    }
 }

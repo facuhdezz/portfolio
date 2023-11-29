@@ -1,99 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Portfolio</title>
-        <link href="styles.css" rel="stylesheet">
-        <script src="scripts.js" defer></script>
-    </head>
 
-    <body>
-        <header class="cabecera">
-            <div class="logo">
-                <img id="perfil" src="Foto perfil.png">
-                <h4 class="cabText" id="name">Facundo Hernández</h4>
-            </div>
-            <nav class="navegacion">
-                <a href="#">
-                    <h4 class="cabText" id="home">Home</h4>
-                </a>
-                <a href="#hr1">
-                    <h4 class="cabText" id="about">About</h4>
-                </a>
-                <a href="#">
-                    <h4 class="cabText" id="projects">Projects</h4>
-                </a>
-                <a href="#">
-                    <h4 class="cabText" id="contact">Contact</h4>
-                </a>
-            </nav>
-            <a href="#">
-                <h4 class="menu cabText" id="menu">MENU</h4>
-            </a>
-            <div class="overlay" id="mobile-menu">
-                <a href="#">
-                    <h4 class="close cabText" id="close">CLOSE</h4>
-                </a>
-                <div class="overlay-content">
-                    <a href="#">
-                        <h4 class="cabText" id="home">Home</h4>
-                    </a>
-                    <a href="#hr1">
-                        <h4 class="cabText" id="about">About</h4>
-                    </a>
-                    <a href="#">
-                        <h4 class="cabText" id="projects">Projects</h4>
-                    </a>
-                    <a href="#">
-                        <h4 class="cabText" id="contact">Contact</h4>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- <script src="scripts.js" defer></script> -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <img class="logo" src="Imagenes/logo_edit.png" alt="logo">
+        <a href="#">
+            <h4 class="cabText" id="home">Inicio</h4>
+        </a>
+        <a href="#section-proyect">
+            <h4 class="cabText" id="projects">Proyectos</h4>
+        </a>
+    </nav>
+    <div>
+        <main class="container">
+            <section class="presentation">
+                <div class="grid titulo">
+                    <div>
+                        <h3>Hola, soy</h3>
+                        <h1>Facundo Hernández<span class="animated-point">.</span></h1>
+                    </div>
+                    <img id="perfil-small" src="Foto perfil.png" alt="foto-perfil">
+                </div>
+                <div class="grid description">
+                    <p id="parrafoCuerpo"><span class="yellow">Desarrollador web en constante formación.</span></br>
+                        Mis principales habilidades están en el desarrollo FrontEnd, pero busco expandir mis conocimientos
+                        al BackEnd y Bases de Datos.
+                    </p>
+                    <img id="perfil-large" src="Foto perfil.png" alt="foto-perfil">
+                </div>
+            </section>
+            <section class="redes">
+                <div class="grid redes-box">
+                    <a href="https://www.linkedin.com/in/facundo-hern%C3%A1ndez-3b1a0b164/" target="_blank">
+                        <img class="imgRedes" id="linkedin" src="./iconos/0-linkedin.png" alt="linkedin-icon">
+                        <p>LinkedIn</p>
                     </a>
                 </div>
+                <div class="grid redes-box">
+                    <a href="https://github.com/FacuHdezz" target="_blank">
+                        <img class="imgRedes" id="github" src="./iconos/0-github.png" alt="github-icon">
+                        <p>GitHub</p>
+                    </a>
+                </div>
+                <div class="grid redes-box">
+                    <a href="mailto:facuhernandez2000@gmail.com" target="_blank">
+                        <img class="imgRedes" id="mail" src="./iconos/0-email.png" alt="email-icon">
+                        <p>Email</p>
+                    </a>
+                </div>
+            </section>
+            <section class="grid experiencia">
+                <div>
+                    <div>
+                        <h1 class="yellow">+3</h1>
+                        <p>Años trabajando en diseño<br> para la industria gráfica.</p>
+                    </div>
+                    <div>
+                        <h1 class="blue">+1</h1>
+                        <p>Año vinculado a la programación<br> en plataformas educativas.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="proyectos" id="section-proyect">
+                <div class="grid titulo-proyecto">
+                    <div>
+                        <h1 class="yellow">Proyectos<span class="animated-point">.</span></h1>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="grid proyect-card">
+                        <h1>e-commerce</h1>
+                        <a href="https://guzmansantanacola.github.io/proyectofinalgrupo2/" target="_blank">
+                            <img class="proyectimg" src="ecommerce.jpg" alt="ecommerce">
+                        </a>
+                    </div>
+                    <div class="grid proyect-card">
+                        <h1>Web para Imprenta</h1>
+                        <a href="https://facuhdezz.github.io/graficagerli/" target="_blank">
+                            <img class="proyectimg" src="graficagerli.jpg" alt="graficagerli">
+                        </a>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="grid proyect-card">
+                        <h1>Web de libros</h1>
+                        <a>
+                            <img class="proyectimg" src="yourbooks.jpg" alt="yourbooks">
+                        </a>
+                    </div>
+                    <div class="grid proyect-card">
+                        <h1>e-commerce</h1>
+                        <a>
+                            <img class="proyectimg" src="ecommerce.jpg" alt="ecommerce">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <hr id="hr1">
+            <!-- <div class="herramientas" id="desarrollo">
+                <h3 class="programText">
+                    Conocimiento de herramientas de desarrollo
+                </h3>
+                <div class="lenguajes">
+                    <img id="html" src="./iconos/html.png">
+                    <img id="css" src="./iconos/css.png">
+                    <img id="js" src="./iconos/javascript.png">
+                </div>
             </div>
-        </header>
-        <div class="cuerpo">
-            <h1 id="presentacion">Hola, soy Facundo Hernández</h1>
-            <p id="parrafoCuerpo">Soy estudiante de programación en Jóvenes a Programar
-                en el ámbito del desarrollo web.
-            </p>
-        </div>
-        <div class="redes1">
-            <a href="https://www.linkedin.com/in/facundo-hern%C3%A1ndez-3b1a0b164/" target="_blank">
-                <img class="imgRedes" id="linkedin" src="./iconos/0-linkedin.png">
-            </a>
-            <a href="https://www.instagram.com/facuhdez_/" target="_blank">
-                <img class="imgRedes" id="instagram" src="./iconos/0-instagram.png">
-            </a>
-            <a href="https://github.com/FacuHdezz" target="_blank">
-                <img class="imgRedes" id="github" src="./iconos/0-github.png">
-            </a>
-            <a href="mailto:facuhernandez2000@gmail.com" target="_blank">
-                <img class="imgRedes" id="mail" src="./iconos/0-email.png">
-            </a>
-        </div>
-        <div class="imagen1">
-            <img id="codigos" src="./Imagenes/program.png">
-        </div>
-        <hr id="hr1">
-        <div class="herramientas" id="desarrollo">
-            <h3 class="programText">
-                Conocimiento de herramientas de desarrollo
-            </h3>
-            <div class="lenguajes">
-                <img id="html" src="./iconos/html.png">
-                <img id="css" src="./iconos/css.png">
-                <img id="js" src="./iconos/javascript.png">
-            </div>
-        </div> 
-        <div class="herramientas" id="design">
-            <h3 class="programText">
-                Experiencia en el manejo de programas de diseño
-            </h3>
-            <div class="programas">
-                <img id="html" src="./iconos/corelDraw.png">
-                <img id="css" src="./iconos/photoshop.png">
-            </div>
-        </div> 
-    </body>
+            <div class="herramientas" id="design">
+                <h3 class="programText">
+                    Experiencia en el manejo de programas de diseño
+                </h3>
+                <div class="programas">
+                    <img id="html" src="./iconos/corelDraw.png">
+                    <img id="css" src="./iconos/photoshop.png">
+                </div>
+            </div> -->
+        </main>
+    </div>
+</body>
 
 </html>
