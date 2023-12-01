@@ -381,6 +381,7 @@ a {
 
 .proyect-card:hover {
     scale: 1.03;
+    background: var(--background-grid-secondary);
 }
 
 .proyect-card img {
@@ -440,10 +441,58 @@ a {
     margin-bottom: 20px;
 }
 
+.titulo-lenguajes {
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.titulo-lenguajes h1 {
+    font-size: 40px;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    margin-block: 0;
+}
+
+.icons-lenguajes {
+    display: block;
+    background-color: var(--background-grid-secondary);
+    max-width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.icons-lenguajes img {
+    width: 60px;
+    margin-block: 10px;
+}
+
+.icons-lenguajes img:hover {
+    scale: 1.2;
+}
+
 footer {
-    background: rgba(0, 0, 0, 0.9);    
+    background: var(--background-navbar);    
     backdrop-filter: blur(5px);
     padding: 40px;
+}
+
+footer p {
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+footer a {
+    transition: .3 ease-in-out;
+}
+
+footer a:hover {
+    scale: 1.2;
+    font-weight: bold;
 }
 
 
@@ -469,6 +518,11 @@ footer {
     .redes-box img {
         margin-left: 5px;
     }
+
+    .icons-lenguajes img {
+        width: 40px;
+        margin-block: 10px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -487,6 +541,10 @@ footer {
 
     .description p {
         margin-inline: 0;
+    }
+
+    .titulo-lenguajes h1 {
+        font-size: 30px;
     }
 }
 
@@ -536,6 +594,12 @@ footer {
 
     .proyect-card {        
         width: auto;
+    }
+
+    .titulo-lenguajes h1 {
+        text-align: center;
+        margin: 5px;
+        font-size: 30px;
     }
 }
 
