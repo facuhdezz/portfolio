@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facu Hernandez</title>
-    <link rel="icon" href="Imagenes/logo_edit.ico" type="image/x-icon">
+    <link rel="icon" href="iconos/logo_edit.png" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="styles.css" rel="stylesheet">
@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar">
-        <img class="logo" src="Imagenes/logo_edit.png" alt="logo">
+        <img class="logo" src="iconos/logo_edit.png" alt="logo">
         <a href="#">
             <h4 class="cabText" id="home">Inicio</h4>
         </a>
@@ -40,15 +40,15 @@
                         <h3>Hola, soy</h3>
                         <h1>Facundo Hernández<span class="animated-point">.</span></h1>
                     </div>
-                    <img id="perfil-small" src="Foto perfil.png" alt="foto-perfil">
+                    <img id="perfil-small" src="imagenes/foto_perfil.png" alt="foto-perfil">
                 </div>
                 <div class="grid description">
-                    <p id="parrafoCuerpo"><span class="yellow">Desarrollador web en constante formación.</span></br>
+                    <p id="parrafoCuerpo"><span class="yellow bolder">Desarrollador web en constante formación.</span></br>
                         Mis principales habilidades están en el desarrollo FrontEnd, pero busco expandir mis
                         conocimientos
                         al BackEnd y Bases de Datos.
                     </p>
-                    <img id="perfil-large" src="Foto perfil.png" alt="foto-perfil">
+                    <img id="perfil-large" src="imagenes/foto_perfil.png" alt="foto-perfil">
                 </div>
             </section>
             <section class="redes">
@@ -94,29 +94,39 @@
                     </div>
                 </div>
             </section>
-            <section class="proyectos" id="section-proyect">
+            <section class="proyectos">
+                <hr id="section-proyect">
                 <div class="grid titulo-proyecto">
                     <h1 class="yellow">Proyectos<span class="animated-point">.</span></h1>
                 </div>
                 <div class="cards">
                     <div class="grid proyect-card">
-                        <h1 class="blue">e-commerce</h1>
+                        <div class="proyect-header">
+                            <h1 class="blue">e-commerce</h1>
+                            <a><p>Link a GitHub</p></a>
+                        </div>
                         <a href="https://guzmansantanacola.github.io/proyectofinalgrupo2/" target="_blank">
-                            <img class="proyectimg" src="ecommerce.jpg" alt="ecommerce">
+                            <img class="proyectimg" src="imagenes/ecommerce.jpg" alt="ecommerce">
                         </a>
                     </div>
                     <div class="grid proyect-card">
-                        <h1 class="blue">Web para Imprenta</h1>
+                        <div class="proyect-header">
+                            <h1 class="blue">Gráfica Gerli</h1>
+                            <a href="https://github.com/facuhdezz/graficagerli" target="_blank"><p>Link a GitHub</p></a>
+                        </div>
                         <a href="https://facuhdezz.github.io/graficagerli/" target="_blank">
-                            <img class="proyectimg" src="graficagerli.jpg" alt="graficagerli">
+                            <img class="proyectimg" src="imagenes/graficagerli.jpg" alt="graficagerli">
                         </a>
                     </div>
                 </div>
                 <div class="cards">
                     <div class="grid proyect-card">
-                        <h1 class="blue">Web de libros</h1>
+                        <div class="proyect-header">
+                            <h1 class="blue">Your Books!</h1>
+                            <a href="https://github.com/facuhdezz/YourBooks" target="_blank"><p>Link a GitHub</p></a>                            
+                        </div>
                         <a>
-                            <img class="proyectimg" src="yourbooks.jpg" alt="yourbooks">
+                            <img class="proyectimg" src="imagenes/yourbooks.jpg" alt="yourbooks">
                         </a>
                     </div>
                     <div class="grid proyect-card asset">
@@ -146,10 +156,12 @@
             </section>
         </main>
         <footer>
-            <p>Página hecha con HTML, CSS Y JavaScript</p>
-            <a href="https://github.com/facuhdezz/portfolio" target="_blank">
-                <p>Link a portfolio en github</p>
-            </a>
+            <div>
+                <p>Página hecha con HTML, CSS Y JavaScript</p>
+                <a href="https://github.com/facuhdezz/portfolio" target="_blank">
+                    <p>Link a portfolio en GitHub</p>
+                </a>
+            </div>
         </footer>
     </div>
 </body>

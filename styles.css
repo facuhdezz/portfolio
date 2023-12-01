@@ -5,6 +5,14 @@
     font-family: 'Staatliches', cursive;
 */
 
+p {
+    margin: 0;
+}
+
+.bolder {
+    font-weight: bold;
+}
+
 :root[data-theme="dark"] {
     --image-b: url(fondos/fondo\ principal_2.jpg);
     --primary-color: white;
@@ -348,6 +356,12 @@ a {
     margin-left: 20px;
 }
 
+.proyectos hr {
+    position: absolute;
+    transform: translateY(-100px);
+    border: none;
+}
+
 .titulo-proyecto {
     justify-content: center;
     margin-top: 30px;
@@ -384,6 +398,21 @@ a {
     background: var(--background-grid-secondary);
 }
 
+.proyect-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.proyect-header p {
+    font-size: 1.1rem;
+    margin-left: 10px;
+}
+
+.proyect-header p::before {
+    content: '🔗 ';
+}
+
 .proyect-card img {
     object-fit: cover;
     width: 100%;
@@ -394,6 +423,11 @@ a {
 
 .proyect-card img:hover {
     filter: grayscale(0);
+}
+
+.proyect-card a {
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .proyect-card a:hover {
@@ -476,23 +510,34 @@ a {
 footer {
     background: var(--background-navbar);    
     backdrop-filter: blur(5px);
-    padding: 40px;
+    padding: 15px;
+}
+
+footer > div {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
 }
 
 footer p {
     font-family: 'Manrope', sans-serif;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    margin-block: 5px;
     color: var(--primary-color);
+    transition: .3s;
 }
 
-footer a {
-    transition: .3 ease-in-out;
-}
-
-footer a:hover {
-    scale: 1.2;
+footer a p:hover {
+    scale: 1.07;
     font-weight: bold;
+}
+
+footer a p::before {
+    content: '🔗 ';
 }
 
 
