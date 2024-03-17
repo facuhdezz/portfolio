@@ -390,24 +390,20 @@ a {
 
 .proyect-card {
     width: 100%;
+    height: 300px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
     border-radius: 20px;
     font-family: 'Manrope', sans-serif;
     color: var(--primary-color);
-    padding: 10px;
     transition: .2s ease-in;
-}
-
-.proyect-card:hover {
-    /* scale: 1.03; */
-    background: var(--background-grid-secondary);
 }
 
 .proyect-header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
 }
 
 .proyect-header p {
@@ -420,14 +416,15 @@ a {
 }
 
 .proyect-card img {
-    object-fit: cover;
-    width: 400px;
+    width: 420px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
     filter: grayscale(100%);
+    transition: 0.2s;
 }
 
 .proyect-card img:hover {
+    transform: scale(1.02);
     filter: grayscale(0);
 }
 
@@ -446,6 +443,14 @@ a {
     font-weight: normal;
     letter-spacing: .1em;
     margin: 10px;
+}
+
+.proyect-header a p {
+    transition: 0.3s;
+}
+
+.proyect-header a p:hover {
+    letter-spacing: 0.5px;
 }
 
 .asset {
