@@ -143,6 +143,24 @@ body {
     padding-inline: 20px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-inline: auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .presentation {
     color: var(--secondary-color);
     position: relative;
@@ -231,16 +249,6 @@ a {
     border-style: none;
 }
 
-.container {
-    position: relative;
-    margin-top: 120px;
-    margin-bottom: 40px;
-    max-width: 900px;
-    margin-inline: auto;
-    padding: 0 30px;
-    box-sizing: border-box;
-}
-
 #perfil-small {
     display: none;
 }
@@ -262,7 +270,6 @@ a {
 }
 
 .description {
-    margin-top: 20px;
     background: var(--background-grid-secondary);
     border-radius: 20px;
     padding: 40px;
@@ -285,7 +292,6 @@ a {
 
 .redes {
     display: flex;
-    margin-top: 10px;
     gap: 10px;
 }
 
@@ -328,7 +334,6 @@ a {
 .experiencia {
     background-color: var(--background-grid-secondary);
     padding: 20px;
-    margin-top: 10px;
     justify-content: center;
     align-items: center;
 }
@@ -364,8 +369,6 @@ a {
 
 .titulo-proyecto {
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 .titulo-proyecto h1 {
@@ -385,7 +388,6 @@ a {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px;
 }
 
 .proyect-card {
