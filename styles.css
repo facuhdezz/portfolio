@@ -234,10 +234,6 @@ a {
     color: var(--primary-color);
 }
 
-.lenguajes img {
-    padding-inline: 10px;
-}
-
 .programas img {
     width: 270px;
 }
@@ -490,8 +486,6 @@ a {
 
 .titulo-lenguajes {
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
 }
 
 .titulo-lenguajes h1 {
@@ -502,23 +496,52 @@ a {
 }
 
 .icons-lenguajes {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: var(--background-grid-secondary);
     max-width: 100%;
-    padding: 20px;
-    margin-top: 10px;
+    padding: 15px;
     align-items: center;
     text-align: center;
 }
 
-.icons-lenguajes img {
-    width: 60px;
-    margin-block: 10px;
+.icons-lenguajes div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-inline: 10px;
+    width: 50px;
+    height: 90px;
 }
 
-.icons-lenguajes img:hover {
-    scale: 1.2;
+.icons-lenguajes p {
+    opacity: 0;
+    color: var(--primary-color);
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+    font-size: .9rem;
+    transition: .25s;
 }
+
+.icons-lenguajes img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 50px;
+    transform: translateY(20px);
+    transition: .08s;
+}
+
+.icons-lenguajes div:hover img {
+    top: 10px;
+}
+
+.icons-lenguajes div:hover p {
+    opacity: 0.8;
+} 
 
 footer {
     background: var(--background-navbar);    
@@ -545,8 +568,7 @@ footer p {
 }
 
 footer a p:hover {
-    scale: 1.07;
-    font-weight: bold;
+    letter-spacing: .7px;
 }
 
 footer a p::before {
@@ -577,9 +599,15 @@ footer a p::before {
         margin-left: 5px;
     }
 
+    .icons-lenguajes div {
+        width: 40px;
+        height: 70px;
+    }
+
     .icons-lenguajes img {
         width: 40px;
         margin-block: 10px;
+        transform: translateY(5px);
     }
 }
 
