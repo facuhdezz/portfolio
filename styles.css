@@ -386,6 +386,10 @@ a {
     gap: 20px;
 }
 
+.proyectos {
+    gap: 20px;
+}
+
 .proyect-card {
     width: 100%;
     height: 300px;
@@ -399,9 +403,19 @@ a {
     transition: .2s ease-in;
 }
 
+.proyect-card > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-block: 10px;
+    margin-right: 10px;
+}
+
 .proyect-header {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
 }
 
 .proyect-header p {
@@ -413,7 +427,11 @@ a {
     content: '🔗 ';
 }
 
-.proyect-card img {
+.proyect-header + p {
+    text-wrap: pretty;
+}
+
+.proyectimg {
     width: 420px;
     height: auto;
     border-radius: 15px;
@@ -421,7 +439,7 @@ a {
     transition: 0.2s;
 }
 
-.proyect-card img:hover {
+.proyectimg:hover {
     transform: scale(1.02);
     filter: grayscale(0);
 }
@@ -435,12 +453,24 @@ a {
     cursor: pointer;
 }
 
+.link-a-proyecto {
+    display: none;
+}
+
 .proyect-card h1 {
     font-family: 'Staatliches', cursive;
-    font-size: 1.5em;
+    font-size: 2rem;
     font-weight: normal;
-    letter-spacing: .1em;
-    margin: 10px;
+    letter-spacing: .1rem;
+    margin: 0;
+}
+
+.proyect-card h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    margin: 0;
 }
 
 .proyect-header a p {
@@ -449,6 +479,22 @@ a {
 
 .proyect-header a p:hover {
     letter-spacing: 0.5px;
+}
+
+.proyect-lenguajes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icons-lenguajes-proyects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icons-lenguajes-proyects img {
+    width: 40px;
 }
 
 .asset {
@@ -511,8 +557,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-inline: 10px;
-    width: 50px;
+    margin-inline: 15px;
+    width: 60px;
     height: 90px;
 }
 
@@ -530,7 +576,7 @@ a {
     z-index: 1;
     top: 0;
     left: 0;
-    width: 50px;
+    width: 60px;
     transform: translateY(20px);
     transition: .08s;
 }
@@ -597,6 +643,24 @@ footer a p::before {
 
     .redes-box img {
         margin-left: 5px;
+    }
+
+    .proyect-card {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .proyectimg {
+        width: 100%;
+    }
+
+    .proyect-card > div {
+        margin: 20px;
+        gap: 20px;
+    }
+
+    .link-a-proyecto {
+        display: block;
     }
 
     .icons-lenguajes div {
