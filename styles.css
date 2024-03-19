@@ -652,6 +652,11 @@ footer a p::before {
 
     .proyectimg {
         width: 100%;
+        filter: none;
+    }
+
+    .proyectimg:hover {
+        transform: scale(1);
     }
 
     .proyect-card > div {
