@@ -254,7 +254,7 @@ a {
 .grid {
     background: var(--background-grid);
     backdrop-filter: blur(1px);
-    border-radius: 20px;
+    border-radius: 12px;
     display: flex;
 }
 
@@ -267,7 +267,7 @@ a {
 
 .description {
     background: var(--background-grid-secondary);
-    border-radius: 20px;
+    border-radius: 12px;
     padding: 40px;
     display: flex;
 }
@@ -293,7 +293,7 @@ a {
 
 .redes-box {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 12px;
     font-family: 'Manrope', sans-serif;
     color: var(--primary-color);
     padding: 10px;
